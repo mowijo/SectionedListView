@@ -42,6 +42,6 @@ void SectionedListView::setModel(QAbstractItemModel *model)
 
 QAbstractItemDelegate *SectionedListView::itemDelegateForIndex(const QModelIndex &index) const
 {
-    return sectionPainterDelegate;
+    return QTreeView::itemDelegateForIndex(index);
 }
 
